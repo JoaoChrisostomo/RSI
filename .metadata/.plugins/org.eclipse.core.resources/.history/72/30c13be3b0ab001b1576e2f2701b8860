@@ -1,0 +1,17 @@
+package tests;
+
+import elementos.ElementosWeb;
+import io.cucumber.java.en.Then;
+import pages.Metodos;
+
+public class StepsLogin {
+
+	Metodos metodos = new Metodos();
+	ElementosWeb el = new ElementosWeb();
+	
+	@Then("entao efetuar login")
+	public void entao_efetuar_login() {
+	    metodos.clicar(el.getloginUsername());
+	}
+	
+}

@@ -1,0 +1,14 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosWeb {
+	// Elementos Web
+	private By user = By.id("menuUser");
+
+	// Métodos publicos dos elementos
+	public By getUser() {
+		return user;
+	}
+
+}

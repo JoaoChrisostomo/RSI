@@ -1,0 +1,23 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosWeb {
+	// Elementos Web
+	private By user = By.id("menuUser");
+    private By CreateNewAccount = By.cssSelector("javascript:void(0)");
+
+
+	// Métodos publicos dos elementos
+	public By getUser() {
+		return user;
+	}
+
+
+
+	public By getCreateNewAccount() {
+		
+		return CreateNewAccount;
+	}
+
+}

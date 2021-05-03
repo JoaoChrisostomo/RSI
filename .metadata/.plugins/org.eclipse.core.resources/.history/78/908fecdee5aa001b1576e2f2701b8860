@@ -1,0 +1,23 @@
+package elementos;
+
+import org.openqa.selenium.By;
+
+public class ElementosWeb {
+	// Elementos Web
+	private By user = By.id("menuUser");
+    private By createNewAccount = By.className("create-new-account ng-scope");
+
+
+	// Métodos publicos dos elementos
+	public By getUser() {
+		return user;
+	}
+
+
+
+	public By getcreateNewAccount() {
+		
+		return createNewAccount;
+	}
+
+}

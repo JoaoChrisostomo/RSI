@@ -1,0 +1,13 @@
+package tests;
+
+import elementos.ElementosWeb;
+import pages.Metodos;
+
+public class StepsLogin {
+
+	Metodos metodos = new Metodos();
+	ElementosWeb el = new ElementosWeb();
+	
+	
+	
+}

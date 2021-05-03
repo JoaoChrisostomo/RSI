@@ -1,0 +1,13 @@
+#Author: maturandomassas@gmail.com
+
+Feature: login
+Eu como usuario quero realizar um login no site Advantage Online Shopping
+  
+
+  
+  Scenario: Eu como usuario quero efetuar o cadastro no site advantage online shopping 
+    Given que eu esteja no "http://advantageonlineshopping.com/#/"
+    And clique no botao do utilizador
+    When preencher todos os campos obrigatorio
+    Then entao efetuar login
+

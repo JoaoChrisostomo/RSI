@@ -1,0 +1,39 @@
+package tests;
+
+import elementos.ElementosWeb;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.Metodos;
+
+public class StepsLogin {
+
+	Metodos metodos = new Metodos();
+	ElementosWeb el = new ElementosWeb();
+	
+	
+	
+	
+	@Given("que eu esteja em {string}")
+	public void que_eu_esteja_em(String appUrl) throws InterruptedException {
+		metodos.abrirNavegador(appUrl, "acessando o site");
+		metodos.esperar();
+	}
+
+	@And("apertar no botao do utilizador")
+	public void apertar_no_botao_do_utilizador() {
+		metodos.clicar(el.getUser());
+			
+
+	}
+
+	@When("preencho todos os campos obrigatorio")
+	public void preencho_todos_os_campos_obrigatorio() {
+	}
+	
+	@Then("entao efetuar login")
+	public void entao_efetuar_login() {
+	}
+	
+}

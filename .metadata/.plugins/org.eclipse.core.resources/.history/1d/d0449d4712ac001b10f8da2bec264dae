@@ -1,0 +1,25 @@
+package tests;
+
+import pages.Metodos;
+
+public class AtualizarCadastro {
+	Metodos metodos = new Metodos();
+	Consultas consulta = new Consultas();
+	RestUtils utils = new RestUtils();
+	Response response;
+
+	String nome = utils.getNome();
+	String company = utils.getCompany();
+	String email = utils.getEmail();
+
+	public boolean validarExiste(String email) {
+		boolean existe = false;
+		int code = consulta.consulta("users/" + email).getStatusCode();
+		if (code == 200) {
+			existe = true;
+		}
+		return existe;
+	}
+
+
+}
