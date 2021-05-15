@@ -10,7 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Metodos {
+import io.cucumber.gherkin.Main;
+
+public class Metodos extends Main {
 
 	WebDriver driver;
 
@@ -73,5 +75,16 @@ public class Metodos {
 		driver.findElement(escreverSenhaLogin).sendKeys(senha);
 		driver.findElement(efetuarLogin).click();
 	}
+	
+	public static void main(String args[])  {
+        Main m = new Main();
+        String[] names = {"Bob", "Jill", "Tom", "Brandon"};
+        System.out.println("O nome é: " + ((Metodos) m).geradorNomes(names));
+    }
 
+    public String geradorNomes(String[] name) {
+        int index = (int) (Math.random() * name.length);
+        return name[index];
+
+}
 }

@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 public class ElementosWeb {
 
 	// Elementos Web
-
 	private By user = By.id("menuUser");
 	private By createNewAccount = By.xpath("/html/body/login-modal/div/div/div[3]/a[2]");
 
@@ -36,11 +35,9 @@ public class ElementosWeb {
 		return escreverUsuarioLogin;
 	}
 
-
 	public By getEscreverSenhaLogin() {
 		return escreverSenhaLogin;
 	}
-
 
 	public By getEfetuarLogin() {
 		return efetuarLogin;
@@ -109,5 +106,4 @@ public class ElementosWeb {
 	public By getUser() {
 		return user;
 	}
-
 }
