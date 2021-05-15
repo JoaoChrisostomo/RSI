@@ -46,7 +46,7 @@ public class StepsCadastro {
 				"Rua Travessa dos Anjos 876", el.getEscreverEstado(), "AM", el.getEscreverCep(), "69080275",
 				el.getBtnAceitarTermos(), el.getBtnConfirmaCadastro());
 		metodos.screnShot("cadastroDown");
-
+//		metodos.fecharNavegador();
 	}
 
 	@Then("cadastro realizado com sucesso")

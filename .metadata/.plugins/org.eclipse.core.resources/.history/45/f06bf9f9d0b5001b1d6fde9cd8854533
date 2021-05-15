@@ -25,7 +25,7 @@ public class ElementosWeb {
 	private By btnAceitarTermos = By.name("i_agree");
 	private By btnConfirmaCadastro = By.id("register_btnundefined");
 	private By cadastroEfetuado = By.cssSelector("#registerPage > article > sec-form > div.center > label.center.block.smollMargin");
-	private By loginEfetuado = By.cssSelector("#menuUserLink > span");
+	private By loginEfetuado = By.id("menuUserLink");
 
 	// Elementos Login
 	private By escreverUsuarioLogin = By.name("username");

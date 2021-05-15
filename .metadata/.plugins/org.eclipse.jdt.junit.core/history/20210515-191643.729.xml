@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="Rerun runner.Executa.login" project="RSI" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="login" time="15.247">
-    <testcase name="Eu como usuario quero efetuar o login no site advantage online shopping" classname="login" time="15.247"/>
-  </testsuite>
-</testrun>

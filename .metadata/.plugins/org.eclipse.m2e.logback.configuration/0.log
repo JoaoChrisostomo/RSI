@@ -1615,3 +1615,31 @@
 2021-05-15 19:37:31,903 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
 2021-05-15 19:37:31,904 [Worker-87: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-05-15 19:37:31,905 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:48:06,094 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:48:06,095 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:48:06,096 [Worker-95: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:48:06,098 [Worker-95: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:53:06,411 [Worker-96: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:53:06,412 [Worker-96: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:53:06,413 [Worker-96: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:53:06,415 [Worker-96: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:53:34,980 [Worker-97: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:53:34,981 [Worker-97: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:53:34,983 [Worker-97: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:53:34,986 [Worker-97: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:57:51,839 [Worker-97: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:57:51,840 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:57:51,841 [Worker-97: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:57:51,843 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:58:06,297 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:58:06,298 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:58:06,299 [Worker-101: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:58:06,300 [Worker-101: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:59:38,117 [Worker-96: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:59:38,118 [Worker-96: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:59:38,119 [Worker-96: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:59:38,120 [Worker-96: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2021-05-15 19:59:55,031 [Worker-96: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:59:55,033 [Worker-96: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\55479\Documents\teste repositorio rsi\RSI\RSI\src\main\resources
+2021-05-15 19:59:55,034 [Worker-96: Launching Rerun runner.Executa.login #2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-15 19:59:55,036 [Worker-96: Launching Rerun runner.Executa.login #2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
