@@ -2,6 +2,8 @@ package tests;
 
 import java.io.IOException;
 
+import org.junit.Assert;
+
 import elementos.ElementosWeb;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -37,6 +39,8 @@ public class StepsLogin {
 		metodos.clicar(el.getEfetuarLogin());
 		metodos.esperar();
 		metodos.screnShot("Login");
+		Assert.assertEquals("BenjaminSilva", metodos.getText(el.getLoginEfetuado()));
+		metodos.fecharNavegador();
 	}
 
 }

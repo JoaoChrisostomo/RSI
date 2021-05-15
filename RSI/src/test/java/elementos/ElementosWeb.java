@@ -24,6 +24,8 @@ public class ElementosWeb {
 	private By escreverCep = By.name("postal_codeRegisterPage");
 	private By btnAceitarTermos = By.name("i_agree");
 	private By btnConfirmaCadastro = By.id("register_btnundefined");
+	private By cadastroEfetuado = By.cssSelector("#registerPage > article > sec-form > div.center > label.center.block.smollMargin");
+	private By loginEfetuado = By.id("menuUserLink");
 
 	// Elementos Login
 	private By escreverUsuarioLogin = By.name("username");
@@ -106,4 +108,13 @@ public class ElementosWeb {
 	public By getUser() {
 		return user;
 	}
+
+	public By getCadastroEfetuado() {
+		return cadastroEfetuado;
+	}
+
+	public By getLoginEfetuado() {
+		return loginEfetuado;
+	}
+
 }

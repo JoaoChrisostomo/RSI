@@ -21,9 +21,14 @@ public class Metodos extends Main {
 		driver = new ChromeDriver();
 		driver.get(appUrl);
 		driver.manage().window().maximize();
-
 	}
 
+	public void fecharNavegador() {
+	driver.close();
+
+	}
+	
+	
 	public void clicar(By elemento) {
 		driver.findElement(elemento).click();
 
@@ -76,15 +81,11 @@ public class Metodos extends Main {
 		driver.findElement(efetuarLogin).click();
 	}
 	
-	public static void main(String args[])  {
-        Main m = new Main();
-        String[] names = {"Bob", "Jill", "Tom", "Brandon"};
-        System.out.println("O nome é: " + ((Metodos) m).geradorNomes(names));
-    }
-
-    public String geradorNomes(String[] name) {
-        int index = (int) (Math.random() * name.length);
-        return name[index];
-
-}
+	public String getText(By elemento) {
+	return	driver.findElement(elemento).getText();
+		
+	}
+	
+	
+   
 }
