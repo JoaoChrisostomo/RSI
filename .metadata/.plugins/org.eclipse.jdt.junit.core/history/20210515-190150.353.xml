@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Executa" project="RSI" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.Executa" time="17.067">
+    <testsuite name="Cadastro" time="17.067">
+      <testcase name="Eu como usuario quero efetuar o cadastro no site advantage online shopping" classname="Cadastro" time="17.067"/>
+    </testsuite>
+  </testsuite>
+</testrun>

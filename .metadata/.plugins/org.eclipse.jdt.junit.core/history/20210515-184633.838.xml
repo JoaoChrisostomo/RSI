@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Executa" project="RSI" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="runner.Executa" time="15.783">
+    <testsuite name="Cadastro" time="15.783">
+      <testcase name="Eu como usuario quero efetuar o cadastro no site advantage online shopping" classname="Cadastro" time="15.783">
+        <error>java.lang.Error: Unresolved compilation problems: 
+	The method findElement(By) in the type WebDriver is not applicable for the arguments ()
+	Syntax error, insert ")" to complete Expression
+	Syntax error, insert ";" to complete Statement
+&#13;
+	at pages.Metodos.cadastraEndereço(Metodos.java:66)&#13;
+	at tests.StepsCadastro.preencher_todos_os_campos_obrigatorio(StepsCadastro.java:45)&#13;
+	at ✽.preencher todos os campos obrigatorio(file:///C:/Users/55479/Documents/teste%20repositorio%20rsi/RSI/RSI/src/test/resources/feature/Cadastro1.feature:12)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

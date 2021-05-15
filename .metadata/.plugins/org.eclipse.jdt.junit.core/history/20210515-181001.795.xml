@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Executa" project="RSI" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="runner.Executa" time="23.699">
+    <testsuite name="Cadastro" time="23.699">
+      <testcase name="Eu como usuario quero efetuar o cadastro no site advantage online shopping" classname="Cadastro" time="23.699">
+        <failure>java.lang.AssertionError: expected:&lt;cadastro&gt; but was:&lt;By.className: #registerPage &gt; article &gt; sec-form &gt; div.center &gt; label.center.block.smollMargin.invalid&gt;&#13;
+	at org.junit.Assert.fail(Assert.java:89)&#13;
+	at org.junit.Assert.failNotEquals(Assert.java:835)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:120)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at tests.StepsCadastro.cadastro_realizado_com_sucesso(StepsCadastro.java:56)&#13;
+	at ✽.cadastro realizado com sucesso(file:///C:/Users/55479/Documents/teste%20repositorio%20rsi/RSI/RSI/src/test/resources/feature/Cadastro1.feature:13)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
