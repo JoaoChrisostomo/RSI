@@ -5,13 +5,12 @@ import java.io.IOException;
 import org.junit.Assert;
 
 import elementos.ElementosWeb;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.Metodos;
 
-public class StepsCadastro {
+public class PreencherTodosOsCampos {
 
 	Metodos metodos = new Metodos();
 	ElementosWeb el = new ElementosWeb();
@@ -22,39 +21,35 @@ public class StepsCadastro {
 		metodos.esperar();
 	}
 
-	@And("clique no botao do utilizador")
+	@Given("clique no botao do utilizador")
 	public void clique_no_botao_do_utilizador() throws InterruptedException {
 		metodos.clicar(el.getUser());
 		metodos.esperar();
 	}
 
-	@And("clique em criar nova conta")
+	@Given("clique em criar nova conta")
 	public void clique_em_criar_nova_conta() throws InterruptedException {
 		metodos.clicar(el.getCreateNewAccount());
 		metodos.esperar();
 	}
 
-	@When("preencher todos os campos obrigatorio")
-	public void preencher_todos_os_campos_obrigatorio() throws InterruptedException, IOException {
-		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjaminSilva", el.getEscreverEmail(),
-				"Benjamin.si@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
+	@When("preencher todos os campos")
+	public void preencher_todos_os_campos() throws IOException {
+		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjamiinSilva", el.getEscreverEmail(),
+				"Benjamin.sii@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
 				"Benjamin123");
 		metodos.screnShot("cadastroUp");
 		metodos.cadastraDados(el.getEscreverNome(), "Benjamin", el.getEscreverSegundoNome(), "Silva",
 				el.getEscreverNumeroTelefone(), "11 968634561");
 		metodos.cadastraEndereço(el.getEscreverPais(), "Brazil", el.getEscreverCidade(), "Manaus", el.getEscreverRua(),
-				"Rua Travessa dos Anjos 876", el.getEscreverEstado(), "AM", el.getEscreverCep(), "69080275",
-				el.getBtnAceitarTermos(), el.getBtnConfirmaCadastro());
+				"Rua Travessa dos Anjos 876", el.getEscreverEstado(), "AM", el.getEscreverCep(), "69080275");
 		metodos.screnShot("cadastroDown");
-
 	}
 
 	@Then("cadastro realizado com sucesso")
 	public void cadastro_realizado_com_sucesso() {
-
-		metodos.clicar(el.getBtnConfirmaCadastro());
-		Assert.assertEquals("User name already exists", metodos.getText(el.getCadastroEfetuado()));
+		metodos.aceitarTermosECadastro(el.getBtnAceitarTermos(), el.getBtnConfirmaCadastro());
+		Assert.assertEquals(metodos.getText(el.getEscreverNomeUsuario()), metodos.getText(el.getLoginEfetuado()));
 		metodos.fecharNavegador();
 	}
-
 }

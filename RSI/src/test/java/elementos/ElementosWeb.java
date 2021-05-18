@@ -22,10 +22,13 @@ public class ElementosWeb {
 	private By escreverRua = By.name("addressRegisterPage");
 	private By escreverEstado = By.name("state_/_province_/_regionRegisterPage");
 	private By escreverCep = By.name("postal_codeRegisterPage");
-	private By btnAceitarTermos = By.name("i_agree");
+	private By btnAceitarTermos = By.xpath("//input[@name='i_agree']");
 	private By btnConfirmaCadastro = By.id("register_btnundefined");
-	private By cadastroEfetuado = By.cssSelector("#registerPage > article > sec-form > div.center > label.center.block.smollMargin");
+	private By cadastroNaoEfetuado = By.xpath("/html[1]/body[1]/div[3]/section[1]/article[1]/h3[1]");
 	private By loginEfetuado = By.cssSelector("#menuUserLink > span");
+	private By emailIsRequired = By.cssSelector("#formCover > div:nth-child(1) > div:nth-child(2) > sec-view:nth-child(2) > div > label");
+	private By passwordIsRequired = By.xpath("//*[@id=\"formCover\"]/div[1]/div[1]/sec-view[2]/div/label");
+	
 
 	// Elementos Login
 	private By escreverUsuarioLogin = By.name("username");
@@ -109,12 +112,22 @@ public class ElementosWeb {
 		return user;
 	}
 
-	public By getCadastroEfetuado() {
-		return cadastroEfetuado;
-	}
+	
 
 	public By getLoginEfetuado() {
 		return loginEfetuado;
+	}
+
+	public By getEmailIsRequired() {
+		return emailIsRequired;
+	}
+
+	public By getPasswordIsRequired() {
+		return passwordIsRequired;
+	}
+
+	public By getCadastroNaoEfetuado() {
+		return cadastroNaoEfetuado;
 	}
 
 }
