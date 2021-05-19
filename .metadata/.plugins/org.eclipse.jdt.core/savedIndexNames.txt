@@ -26,8 +26,8 @@ INDEX VERSION 1.131+C:\Users\55479\Documents\teste repositorio rsi\RSI\.metadata
 795555671.index
 484801034.index
 1648447530.index
-3974305906.index
 3285971946.index
+3974305906.index
 2862048261.index
 3051629141.index
 3572848206.index

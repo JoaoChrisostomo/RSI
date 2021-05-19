@@ -1,5 +1,7 @@
 package tests;
 
+import java.io.IOException;
+
 import org.junit.Assert;
 
 import elementos.ElementosWeb;
@@ -27,14 +29,16 @@ public class PreencherLoginESenhaIncorretos {
 	}
 
 	@When("preencher o campo de login e senha incorretos tres")
-	public void preencher_o_campo_de_login_e_senha_incorretos_tres() {
+	public void preencher_o_campo_de_login_e_senha_incorretos_tres() throws IOException {
 		metodos.preencherLogin(el.getEscreverUsuarioLogin(), "BenjaminSilva", el.getEscreverSenhaLogin(), "pep967", el.getEfetuarLogin());
+		
 	}
 	
 	@Then("entao nao efetuar cadastro tres")
-	public void entao_nao_efetuar_cadastro_tres() {
+	public void entao_nao_efetuar_cadastro_tres() throws IOException {
 		metodos.clicar(el.getEfetuarLogin());
 		Assert.assertTrue(metodos.btnExiste(el.getEfetuarLogin()));
+		metodos.screnShot("LoginSenhaIncorretos");
 		metodos.fecharNavegador();
 	}
 }

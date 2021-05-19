@@ -35,21 +35,22 @@ public class PreencherTodosOsCampos {
 
 	@When("preencher todos os campos")
 	public void preencher_todos_os_campos() throws IOException {
-		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjamiinSilva", el.getEscreverEmail(),
-				"Benjamin.sii@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
+		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjaminSiilva", el.getEscreverEmail(),
+				"Benjamin.siii@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
 				"Benjamin123");
 		metodos.screnShot("cadastroUp");
 		metodos.cadastraDados(el.getEscreverNome(), "Benjamin", el.getEscreverSegundoNome(), "Silva",
 				el.getEscreverNumeroTelefone(), "11 968634561");
 		metodos.cadastraEndereço(el.getEscreverPais(), "Brazil", el.getEscreverCidade(), "Manaus", el.getEscreverRua(),
 				"Rua Travessa dos Anjos 876", el.getEscreverEstado(), "AM", el.getEscreverCep(), "69080275");
-		metodos.screnShot("cadastroDown");
+		metodos.screnShot("Todos os Campos Preenchidos");
 	}
 
 	@Then("cadastro realizado com sucesso")
-	public void cadastro_realizado_com_sucesso() {
+	public void cadastro_realizado_com_sucesso() throws IOException {
 		metodos.aceitarTermosECadastro(el.getBtnAceitarTermos(), el.getBtnConfirmaCadastro());
 		Assert.assertEquals(metodos.getText(el.getEscreverNomeUsuario()), metodos.getText(el.getLoginEfetuado()));
+		metodos.screnShot("Todos Os Campos Preenchidos Com Sucesso");
 		metodos.fecharNavegador();
 	}
 }
