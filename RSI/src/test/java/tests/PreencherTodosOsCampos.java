@@ -35,8 +35,8 @@ public class PreencherTodosOsCampos {
 
 	@When("preencher todos os campos")
 	public void preencher_todos_os_campos() throws IOException {
-		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjaminSiilva", el.getEscreverEmail(),
-				"Benjamin.siii@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
+		metodos.cadastrarConta(el.getEscreverNomeUsuario(), "BenjaminSiiilva", el.getEscreverEmail(),
+				"Benjamin.siiii@gmail.com", el.getEscreverSenha(), "Benjamin123", el.getEscreverConfirmaSenha(),
 				"Benjamin123");
 		metodos.screnShot("cadastroUp");
 		metodos.cadastraDados(el.getEscreverNome(), "Benjamin", el.getEscreverSegundoNome(), "Silva",
@@ -47,10 +47,11 @@ public class PreencherTodosOsCampos {
 	}
 
 	@Then("cadastro realizado com sucesso")
-	public void cadastro_realizado_com_sucesso() throws IOException {
+	public void cadastro_realizado_com_sucesso() throws IOException, InterruptedException {
 		metodos.aceitarTermosECadastro(el.getBtnAceitarTermos(), el.getBtnConfirmaCadastro());
 		Assert.assertEquals(metodos.getText(el.getEscreverNomeUsuario()), metodos.getText(el.getLoginEfetuado()));
 		metodos.screnShot("Todos Os Campos Preenchidos Com Sucesso");
+		metodos.esperar();
 		metodos.fecharNavegador();
 	}
 }
